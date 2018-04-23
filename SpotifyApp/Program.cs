@@ -20,8 +20,8 @@ namespace SpotifyApp
                 UseAuth = false,
             };
             UserAuthentication.Authenticate(spotifyAPI);
-            Console.WriteLine("HEY");
-            Console.ReadKey();
+            CommandHandler commandHandler = new CommandHandler();
+            commandHandler.Driver(spotifyAPI);
 
 
 
